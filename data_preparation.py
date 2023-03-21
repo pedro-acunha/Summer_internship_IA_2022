@@ -8,11 +8,11 @@ import pandas as pd
 
 
 # Read file with the mapping between the images and the objid DR7
-df_mapping = pd.read_csv('/home/pcunha/Documents/Summer_interships/gz2_filename_mapping.csv')
+df_mapping = pd.read_csv('./gz2_filename_mapping.csv')
 #df_class = pd.read_csv('zoo2MainSpecz.csv')
 
 # Read file with the GZ2 classifications
-df_class = pd.read_csv('/home/pcunha/Documents/Summer_interships/gz2_hart16.csv')
+df_class = pd.read_csv('./gz2_hart16.csv')
 
 # Renames and merge DataFrames using the objid as reference
 df_class.rename(columns = {'dr7objid':'objid'}, inplace = True)
@@ -23,7 +23,7 @@ df_combine = df_class.merge(df_mapping, how='left', on='objid')
 df_combine['g_class'] = df_combine['gz2_class'].astype(str).str[0]
 
 # Path where I have the images. Change this accordingly!
-base_path = r'/home/pcunha/Documents/Summer_interships/images_gz2'
+base_path = r'./images_gz2'
 
 #Creates the path where the images are stored
 training_images = os.path.join(base_path, 'images')
