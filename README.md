@@ -7,9 +7,9 @@ Collection of material used during the IA Summer Internship 2022 for the project
 ## Task 1: Exploring Galaxy Zoo data
 The Galaxy Zoo project provided the classification results in the following website:
 https://data.galaxyzoo.org/
-The first thing to do is download the data. You will get the dataset from Galaxy Zoo 2.
-Read this page carefully alongside this one. It is important to cross-reference theimages with the classification from Galaxy Zoo. You can do it by using the ObjID. The
-class you will consider for the classification is the “gz2_class”.
+
+The first thing to do is download the data. You will get the dataset from Galaxy Zoo 2 (https://zenodo.org/record/3565489#.YsglD9JByV6).
+Read the description page carefully alongside with this paper: https://doi.org/10.1093/mnras/stt1458. It is important to cross-reference the images with the classification from Galaxy Zoo. You can do it by using the ObjID. The class you will consider for the classification is the “gz2_class”.
 My recommendation is for you to identify the classes in the dataset and select a random
 sample of sources with that label (e.g. 2,000 galaxies classified as Er, etc). You are free
 to choose the number of classes you want to use (e.g, 2 for a binary classification, or all
